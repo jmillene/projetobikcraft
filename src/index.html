@@ -5,22 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Portifólio</title>
+    <title>Bikcraft</title>
   </head>
-  <body>
+  <body class="flex flex-col">
     <header>
-      <div class="bg-black mx-100 flex flex-row py-5 px-10 justify-between p-20">
+      <div
+        class="bg-black w-full mx-100 flex flex-row py-5 px-10 justify-between p-20"
+      >
         <a href="/"><img src="/img/bikcraft.svg" alt="logo" /></a>
         <nav class="text-white">
           <ul class="flex gap-20 text-white font-serif font-bold">
             <li class="px-5 mx-3 hover:border-b-2 hover:border-white">
-              Bicicletas
+              <a href="/src/index.html">Bicicletas</a>
             </li>
             <li class="px-5 mx-3 hover:border-b-2 hover:border-white">
-              Seguros
+              <a href="/src/seguro/seguro.html">Seguros</a>
             </li>
             <li class="px-5 mx-3 hover:border-b-2 hover:border-white">
-              Contato
+              <a href="/">Contato</a>
             </li>
           </ul>
         </nav>
@@ -35,7 +37,7 @@
         </div>
       </div>
     </header>
-    <div class="w-full flex flex-row">
+    <div class="w-full flex flex-row relative">
       <div class="w-1/2 relative">
         <img
           src="/img/bicicleta/nimbus1.jpg "
@@ -86,27 +88,88 @@
         </ul>
         <br />
         <div class="flex justify-end w-full font-sans">
-          <a class="w-1/4 bg-orange-500 rounded p-5" href="/"> Mais Sobre ➙ </a>
+          <a class="w-4/12 bg-orange-500 rounded p-5 uppercase text-center" href="/"> Mais Sobre ➙ </a>
         </div>
       </div>
     </div>
-    <div class="w-full flex flex-row bg-black m-20  relative">
-      <div class="w-1/2 relative">
+    <div class="w-full flex flex-row my-20 relative">
+      <div class="w-1/2 z-20 absolute">
         <img
           src="/img/bicicletas/magic.jpg"
           alt="bicicleta preta"
-          class="p-10 absolute rounded"
+          class="p-10 w-full object-cover absolute rounded"
         />
-        <span class="absolute right-14 bg-black top-14 text-white p-4 rounded"
-          >R$2499</span
+        <span class="absolute right-14 bg-black top-14 text-white p-4 rounded">
+          R$2499
+        </span>
+      </div>
+      <div class="w-full flex justify-end">
+        <div class="w-4/5 p-10 pl-32 bg-black flex">
+          <div class="w-1/3"></div>
+          <div class="w-2/3">
+            <h1 class="font-bold text-2xl text-white pl-12">Magic Might</h1>
+            <p class="text-slate-600 pl-12">
+              A Magic Might é a melhor Bikcraft já criada pela nossa equipe. Ela
+              vem equipada com os melhores acessórios, o que garante maior
+              velocidade.
+            </p>
+            <ul class="relative">
+              <li class="text-slate-600 flex py-4">
+                <img class="pr-4"
+                  src="/img/icones/eletrica.svg"
+                  alt="eletrica"
+                />
+               <span>Motor Elétrico</span> 
+              </li>
+              <li class="text-slate-600 flex py-4">
+                <img class="pr-4"
+                src="/img/icones/carbono.svg"
+                alt="carbono"
+                />
+               <span>Fibra de Carbono</span> 
+              </li>
+              <li class="text-slate-600 flex py-4">
+                <img class="pr-4"
+                src="/img/icones/velocidade.svg"
+                alt="velocidade"
+                />
+               <span>45 km/h</span> 
+              </li>
+              <li class="text-slate-600 flex py-4">
+                <img class="pr-4"
+                  src="/img/icones/rastreador.svg"
+                  alt="rastreador"
+                />
+               <span>Rastreador</span> 
+              </li>
+            </ul>
+            <div class="flex justify-end w-full font-sans">
+              <a class="w-4/12 bg-orange-500 rounded p-5 uppercase text-center" href="/">
+                Mais Sobre ➙
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-full flex flex-row relative">
+      <div class="w-1/2 relative">
+        <img
+          src="/img/bicicletas/nebula.jpg"
+          class="p-10 absolute rounded"
+          alt="bicicleta preta"
+        />
+        <span class="absolute right-14 top-14 bg-black text-white p-4 rounded"
+          >R$4999</span
         >
       </div>
-      <div class="w-1/2 p-10 relative justify-end ">
-        <h1 class="font-bold text-2xl text-white">Magic Might</h1>
+      <div class="w-1/2 p-10 relative">
+        <h2 class="font-bold text-2xl">Nebula Cosmic</h2>
         <br />
         <p class="text-slate-600">
-          A Magic Might é a melhor Bikcraft já criada pela nossa equipe. Ela vem
-          equipada com os melhores acessórios, o que garante maior velocidade.
+          A Nebula Cosmic é a melhor Bikcraft já criada pela nossa equipe. Ela
+          vem equipada com os melhores acessórios, o que garante maior
+          velocidade.
         </p>
         <br />
         <ul>
@@ -129,7 +192,7 @@
             src="/img/icones/velocidade.svg"
             alt="velovidade"
           />
-          <li class="text-slate-600">50 km/h</li>
+          <li class="text-slate-600">40 km/h</li>
           <br />
           <img
             class="absolute left-0 top-500"
@@ -138,10 +201,45 @@
           />
           <li class="text-slate-600">Rastreador</li>
         </ul>
-        <div class="flex justify-end w-full font-sans">
-          <a class="w-1/4 bg-orange-500 rounded p-5" href="/"> Mais Sobre ➙ </a>
+        <br />
+        <div class="flex justify-end w-full font-sans m-0">
+          <a class="w-4/12 bg-orange-500 rounded p-5 uppercase text-center" href="/"> Mais Sobre ➙ </a>
         </div>
       </div>
     </div>
+    <div class="flex bg-black text-white grid-cols-2 flex justify-between">
+      <img class="w-1/12 h-6" src="/img/bikcraft.svg" alt="logo" />
+      <div>
+        <h1 class="uppercase">Contato</h1>
+        <br />
+        <ul>
+          <li>+55 21 9999-9999</li>
+          <li>contato@bikcraft.com</li>
+          <hr class="my-2 bg-gray-500">
+          <li>Rua Ali Perto, 42 - Botafogo</li>
+          <li>Rio de Janeiro - RJ</li>
+          <hr class="my-2">
+        </ul>
+        <div class="flex p-10 gap-4">
+          <img src="/img/redes/facebook.svg" alt="" />
+          <img src="/img/redes/instagram.svg" alt="" />
+          <img src="/img/redes/youtube.svg" alt="" />
+        </div>
+      </div>
+      <div>
+        <h1 class="uppercase">Informações</h1>
+        <br />
+        <ul>
+          <li><a href="/">Bicicletas</a></li>
+          <li><a href="/">Seguros</a></li>
+          <li><a href="/">Contato</a></li>
+          <li><a href="/">Termos e Condições</a></li>
+        </ul>
+      </div>
+    
+    </div>
+    <footer class="text-center bg-black text-white">
+      Bikcraft.Alguns direitos reservados
+    </footer>
   </body>
 </html>

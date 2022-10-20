@@ -4,35 +4,144 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/dist/output.css" rel="stylesheet" />
-    <title>bikcraft</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Portifólio</title>
   </head>
   <body>
     <header>
-      <div
-        class="bg-black text-white "
-      >
-        <a href="/">
-          <img src="/img/bikcraft.svg" alt="logo" />
-        </a>
-        <nav>
-          <ul class="flex list-none gap-20 ">
-          <li><a href="/">Bicicletas</a></li>
-          <li><a href="/">Seguros</a></li>
-          <li><a href="/">Contato</a></li>
-        </ul>
+      <div class="bg-black mx-100 flex flex-row py-5 px-10 justify-between p-20">
+        <a href="/"><img src="/img/bikcraft.svg" alt="logo" /></a>
+        <nav class="text-white">
+          <ul class="flex gap-20 text-white font-serif font-bold">
+            <li class="px-5 mx-3 hover:border-b-2 hover:border-white">
+              Bicicletas
+            </li>
+            <li class="px-5 mx-3 hover:border-b-2 hover:border-white">
+              Seguros
+            </li>
+            <li class="px-5 mx-3 hover:border-b-2 hover:border-white">
+              Contato
+            </li>
+          </ul>
         </nav>
       </div>
-      
-    </header>
-    <div class="bg-neutral-800">
-        <p>escolha a melhor para você
-          </p>
-          <h1>nossas bicicletas.</h1>
+      <div>
+        <div class="bg-zinc-900 text-white p-20 font-serif font-bold">
+          <p class="text-2xl uppercase">Escolha a melhor para você.</p>
+          <br />
+          <h1 class="text-6xl">
+            nossas bicicletas<span class="text-yellow-400">.</span>
+          </h1>
+        </div>
       </div>
-      <div class="w-full h-screen">
-      <img src="/img/bicicleta/nimbus1.jpg " class="w-1/2 h-1/2" alt="bicicleta preta">
-      <span>R$ 4999</span>
+    </header>
+    <div class="w-full flex flex-row">
+      <div class="w-1/2 relative">
+        <img
+          src="/img/bicicleta/nimbus1.jpg "
+          class="p-10 absolute rounded"
+          alt="bicicleta preta"
+        />
+        <span class="absolute right-14 top-14 bg-black text-white p-4 rounded"
+          >R$4999</span
+        >
+      </div>
+      <div class="w-1/2 p-10 relative">
+        <h2 class="font-bold text-2xl">Nimbus Stark</h2>
+        <br />
+        <p class="text-slate-600">
+          A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela
+          vem equipada com os melhores acessórios, o que garante maior
+          velocidade.
+        </p>
+        <br />
+        <ul>
+          <img
+            class="absolute left-0 top-500"
+            src="/img/icones/eletrica.svg"
+            alt="eletrica"
+          />
+          <li class="text-slate-600">Motor Elétrico</li>
+          <br />
+          <img
+            class="absolute left-0 top-500"
+            src="/img/icones/carbono.svg"
+            alt="carbono"
+          />
+          <li class="text-slate-600">Fibra de Carbono</li>
+          <br />
+          <img
+            class="absolute left-0 top-500"
+            src="/img/icones/velocidade.svg"
+            alt="velovidade"
+          />
+          <li class="text-slate-600">50 km/h</li>
+          <br />
+          <img
+            class="absolute left-0 top-500"
+            src="/img/icones/rastreador.svg"
+            alt="rastreador"
+          />
+          <li class="text-slate-600">Rastreador</li>
+        </ul>
+        <br />
+        <div class="flex justify-end w-full font-sans">
+          <a class="w-1/4 bg-orange-500 rounded p-5" href="/"> Mais Sobre ➙ </a>
+        </div>
+      </div>
+    </div>
+    <div class="w-full flex flex-row bg-black m-20  relative">
+      <div class="w-1/2 relative">
+        <img
+          src="/img/bicicletas/magic.jpg"
+          alt="bicicleta preta"
+          class="p-10 absolute rounded"
+        />
+        <span class="absolute right-14 bg-black top-14 text-white p-4 rounded"
+          >R$2499</span
+        >
+      </div>
+      <div class="w-1/2 p-10 relative justify-end ">
+        <h1 class="font-bold text-2xl text-white">Magic Might</h1>
+        <br />
+        <p class="text-slate-600">
+          A Magic Might é a melhor Bikcraft já criada pela nossa equipe. Ela vem
+          equipada com os melhores acessórios, o que garante maior velocidade.
+        </p>
+        <br />
+        <ul>
+          <img
+            class="absolute left-0 top-500"
+            src="/img/icones/eletrica.svg"
+            alt="eletrica"
+          />
+          <li class="text-slate-600">Motor Elétrico</li>
+          <br />
+          <img
+            class="absolute left-0 top-500"
+            src="/img/icones/carbono.svg"
+            alt="carbono"
+          />
+          <li class="text-slate-600">Fibra de Carbono</li>
+          <br />
+          <img
+            class="absolute left-0 top-500"
+            src="/img/icones/velocidade.svg"
+            alt="velovidade"
+          />
+          <li class="text-slate-600">50 km/h</li>
+          <br />
+          <img
+            class="absolute left-0 top-500"
+            src="/img/icones/rastreador.svg"
+            alt="rastreador"
+          />
+          <li class="text-slate-600">Rastreador</li>
+        </ul>
+        <div class="flex justify-end w-full font-sans">
+          <a class="w-1/4 bg-orange-500 rounded p-5" href="/"> Mais Sobre ➙ </a>
+        </div>
+      </div>
     </div>
   </body>
 </html>

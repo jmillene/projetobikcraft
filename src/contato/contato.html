@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div
+        class="bg-black w-full mx-100 flex flex-row py-5 px-10 justify-between p-20"
+      >
+        <a href="/"><img src="/img/bikcraft.svg" alt="logo" /></a>
+        <nav class="text-white">
+          <ul class="flex gap-20 text-white font-serif font-bold">
+            <li class="px-5 mx-3 hover:border-b-2 hover:border-white">
+              <a href="/src/index.html">Bicicletas</a>
+            </li>
+            <li class="px-5 mx-3 hover:border-b-2 hover:border-white">
+              <a href="/src/seguro/seguro.html">Seguros</a>
+            </li>
+            <li class="px-5 mx-3 hover:border-b-2 hover:border-white">
+              <a href="/src/contato/contato.html">Contato</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="bg-zinc-900 text-white font-sans flex grid-cols-2">
+      <p class="text-2xl uppercase">respostas em até 24h</p>
+      <br />
+      <h1 class="text-6xl">
+        nosso contato<span class="text-yellow-400">.</span>
+      </h1>
+      <div class="bg-black text-white m-8 p-20 w-1/4 relative">
+        <p>Loja Online</p>
+        <br />
+        <p>
+          <img
+            class="absolute left-10 top-500"
+            src="/img/icones/local.svg"
+            alt=""
+          />
+          Rua Ali Perto, 35
+        </p>
+        <p>Brasil - Terra - Vita Láctea</p>
+        <br />
+        <div>
+          <div>
+            <img
+              class="absolute left-10 top-500"
+              src="/img/icones/email.svg"
+              alt="email"
+            />
+            <a href="mailto:contato@bikcraft.com">contato@bikcraft.com</a>
+            <a href="mailto:assistencia@bikcraft.com"
+              >assistencia@bikcraft.com</a
+            >
+            <br />
+            <br />
+            <img
+              class="absolute left-10 top-500"
+              src="/img/icones/telefone.svg"
+              alt="telefone"
+            />
+            <a href="tel:+552199999999">+55 21 9999-9999</a>
+          </div>
+          <br />
+          <div class="flex gap-10">
+            <img src="/img/redes/facebook-p.svg" alt="" />
+            <img src="/img/redes/instagram-p.svg" alt="" />
+            <img src="/img/redes/youtube-p.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="bg-white text-black m-8 p-20 w-1/4 p-10 leading-8 relative">
+        <form action="">
+          <div>
+            <label for="nome">Nome</label>
+            <input
+              class="bg-slate-100 border-dashed p-1"
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Seu nome"
+            />
+          </div>
+          <div>
+            <label for="telefone">Telefone</label>
+            <input
+              class="bg-slate-100 p-1"
+              type="text"
+              id="telefone"
+              name="telefone"
+              placeholder="+55 21 9999-9999"
+            />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input
+              class="bg-slate-100 p-1"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="contato@email.com"
+            />
+          </div>
+          <div class="col-2">
+            <label for="mensagem">Mensagem</label>
+            <textarea
+              class="bg-slate-100"
+              rows="5"
+              id="mensagem"
+              name="mensagem"
+              placeholder="O que você precisa?"
+            ></textarea>
+          </div>
+          <br />
+          <button
+            class="bg-orange-500 rounded p-5 uppercase text-center items-center m-4"
+          >
+            Enviar Mensagem
+          </button>
+        </form>
+      </div>
+    </div>
+    <h1  class="text-6xl">lojas locais<span class="text-yellow-400">.</span></h1>
+  <div class="bg-white w-1/4">
+    <img class="p-10 roundedrelative" src="/img/lojas/rj.jpg" alt="mapa">
+<h1>Rio de Janeiro</h1>
+  </div>
+  </body>
+</html>

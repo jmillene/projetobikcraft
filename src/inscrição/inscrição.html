@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Inscrição</title>
+  </head>
+  <body>
+    <header>
+      <div
+        class="bg-black w-full mx-100 flex flex-row py-5 px-10 justify-between p-20"
+      >
+        <a href="/"><img src="/img/bikcraft.svg" alt="logo" /></a>
+        <nav class="text-white">
+          <ul class="flex gap-20 text-white font-serif font-bold">
+            <li class="px-5 mx-3 hover:border-b-2 hover:border-white">
+              <a href="/src/index.html">Bicicletas</a>
+            </li>
+            <li class="px-5 mx-3 hover:border-b-2 hover:border-white">
+              <a href="/src/seguro/seguro.html">Seguros</a>
+            </li>
+            <li class="px-5 mx-3 hover:border-b-2 hover:border-white">
+              <a href="/src/contato/contato.html">Contato</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <div class="bg-zinc-900 text-white p-20 font-serif font-bold">
+          <p class="text-2xl uppercase">COTAÇÕES NO SEU EMAIL.</p>
+          <br />
+          <h1 class="text-6xl">
+            solicite um orçamento<span class="text-yellow-400">.</span>
+          </h1>
+        </div>
+      </div>
+    </header>
+    <div class="bg-white flex p-32 w-1/4 leading-8">
+      <form action="">
+        <h1 class="font-sans font-bold uppercase">Dados pessoais</h1>
+        <label for="nome">
+          Nome <input class="bg-slate-100 border-dashed p-1 type="text">
+        </label>
+        <div>
+          <label for="sobrenome">Sobrenome</label>
+          <input class="bg-slate-100 border-dashed p-1 type="text"
+          id="sobrenome" name="sobrenome">
+        </div>
+        <div class="col-2">
+          <label for="cpf">CPF</label>
+          <input class="bg-slate-100 border-dashed p-1 type="text" id="cpf"
+          name="cpf" placeholder="000.000.000-00">
+        </div>
+        <div class="col-2">
+          <label for="email">Email</label>
+          <input class="bg-slate-100 border-dashed p-1 type="email" id="email"
+          name="email">
+        </div>
+        <h2 class="font-sans font-bold uppercase">entrega</h2>
+        <div>
+          <label for="cep">CEP</label>
+          <input class="bg-slate-100 border-dashed p-1 type="text" id="cep"
+          name="cep">
+        </div>
+        <div>
+          <label for="numero">Número</label>
+          <input class="bg-slate-100 border-dashed p-1 type="text" id="numero"
+          name="numero">
+        </div>
+        <div>
+          <label for="logradouro">Logradouro</label>
+          <input class="bg-slate-100 border-dashed p-1 type="text"
+          id="logradouro" name="logradouro">
+        </div>
+        <div>
+          <label for="bairro">Bairro</label>
+          <input class="bg-slate-100 border-dashed p-1" type="text" id="bairro"
+          name="bairro">
+        </div>
+        <div>
+          <label for="cidade">Cidade</label>
+          <input
+            class="bg-slate-100 border-dashed p-1"
+            type="text"
+            id="cidade"
+            name="cidade"
+          />
+        </div>
+        <div>
+          <label for="estado">Estado</label>
+          <input class="bg-slate-100 border-dashed p-1 type="text" id="estado"
+          name="estado">
+        </div>
+        <br />
+        <button class="w-12/12 bg-orange-500 rounded p-5 uppercase text-center">
+          Solicitar Orçamento
+        </button>
+      </form>
+    </div>
+    <div class="flex bg-black text-white grid-cols-2 flex justify-between">
+      <img class="w-1/12 h-6" src="/img/bikcraft.svg" alt="logo" />
+      <div>
+        <h1 class="uppercase">Contato</h1>
+        <br />
+        <ul>
+          <li>+55 21 9999-9999</li>
+          <li>contato@bikcraft.com</li>
+          <hr class="my-2 bg-gray-500" />
+          <li>Rua Ali Perto, 42 - Botafogo</li>
+          <li>Rio de Janeiro - RJ</li>
+          <hr class="my-2" />
+        </ul>
+        <div class="flex p-10 gap-4">
+          <img src="/img/redes/facebook.svg" alt="" />
+          <img src="/img/redes/instagram.svg" alt="" />
+          <img src="/img/redes/youtube.svg" alt="" />
+        </div>
+      </div>
+      <div class="mr-4">
+        <h1 class="uppercase">Informações</h1>
+        <br />
+        <ul>
+          <li><a href="/">Bicicletas</a></li>
+          <li><a href="/">Seguros</a></li>
+          <li><a href="/">Contato</a></li>
+          <li><a href="/">Termos e Condições</a></li>
+        </ul>
+      </div>
+    </div>
+    <footer class="text-center bg-black text-white">
+      Bikcraft.Alguns direitos reservados
+    </footer>
+  </body>
+</html>
